@@ -14,10 +14,10 @@ const router = createRouter({
     {
       name: "NotFound",
       path: "/:pathMatch(.*)*",
-      component: () => import("./views/NotFound.vue"),
       // route level code-splitting
-      // this generates a separate chunk (ProfileView.[hash].js) for this route
+      // this generates a separate chunk (NotFound.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
+      component: () => import("./views/NotFound.vue"),
       meta: { isPublic: true },
     },
   ],
